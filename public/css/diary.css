@@ -7,10 +7,16 @@ body{
   height: 100vh;
   text-align: center;
   background-color: #FF9933;
+  color: #663300;
 }
 
 article {
-  border: solid 2px #663300 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: inherit;
+  height: inherit;
+  /* border: solid 2px #663300 ; */
   background-color: #FF9933;
   background-color: 	#EEB887;
 }
@@ -20,7 +26,7 @@ article {
   text-align: center;
   color: #663300;
   width: 100%;
-  height: 50%;
+  height: 25%;
   font-size: 40px;
 }
 
@@ -29,6 +35,11 @@ h1 {
 }
 
 .span1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y:auto;
   padding: 20px;
   text-align: center;
   color: #663300;
@@ -37,11 +48,26 @@ h1 {
   font-size: 20px;
 }
 
+.span1 p {
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(255,255,255,.1);
+  box-shadow: 0px 0px 15px 	#996B1F;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+
 .button1{
-  margin: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   text-align: center;
   color: #663300;
-  height: 50%;
+  height: 10%;
+  background-color:#FFEBCD;
 }
 
 .button1 div {
@@ -49,14 +75,25 @@ h1 {
   display: inline-block;
   background-color: rgba(255,255,255,.1);
   box-shadow: 0px 0px 15px 	#996B1F;
-  border-radius: 0%;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.button1 div:hover {
+.button1 div img {
+    height:24px;
+}
+
+.button1 div:hover, .span1 p:hover {
   cursor: pointer;
 }
 
 .button1 div:active {
+  box-shadow: 0px 0px 5px;
+  padding: 100px;
+}
+
+.span1 p:active {
   box-shadow: 0px 0px 5px;
 }
 
